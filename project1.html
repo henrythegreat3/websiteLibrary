@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+<body>
+    <button id="reset" onclick="reset()"></button>
+    <input onkeypress="nameInput()" placeholder="enter name" id="inName"></input>
+    <input onkeypress="runInput(event)" placeholder="testing" id="inName"></input>
+    <input placeholder="enter class" id="inClass"></input>
+    <div id="outputTest">hello</div>
+    <div id="outputName">hello</div>
+    <div id="outputClass">hello</div>
+   
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+    font-family: 'Roboto Mono', monospace;
+    }
+#in{
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    
+
+}
+div {
+width: 600px;
+height: 30px;
+background: #000;
+color: #fff;
+}
+    </style>
+    <script>
+        
+        var output = document.getElementById("output");
+        var inClass = document.getElementById("inClass");
+        var inName = document.getElementById("inName");
+    function runInput(event) {
+        let key = event.code;
+            outputTest.innerHTML = key;
+        outputName
+           }
+        
+        function reset(){
+            outputTest.innerHTML = "hello";
+        }
+    function nameInput(){
+        let key = event.key;
+        let regString = "you pressed a"
+        let nameString = inName.value;
+        outputName.innerHTML = nameString;
+
+    }
